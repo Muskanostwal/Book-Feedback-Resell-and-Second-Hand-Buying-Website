@@ -20,5 +20,5 @@ This marketplace enables users to **sell and buy second-hand books** while provi
 ## 📥 Installation & Setup  
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/book-resell.git
+   git clone https://github.com/muskanostwal/book-resell.git
    cd book-resell
