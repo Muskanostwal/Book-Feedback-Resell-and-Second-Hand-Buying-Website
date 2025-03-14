@@ -1,0 +1,25 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h2>Welcome to BookVista</h2>
+    
+    <div class="container">
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
+            <% for(let listing of allListings){ %>
+                <div class="col">
+                    <a href="/listings/<%=listing._id%>" class="listing-link">
+                        <div class="card listing-card">
+                            <img class="card-img-top" src="<%= listing.image %>" alt="Book image" style="height: 20rem; object-fit: cover;"/>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <b><%= listing.title %></b> <br>
+                                    &#8377; <%= listing.price.toLocaleString("en-IN") %> /book
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+</body>
